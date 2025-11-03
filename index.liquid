@@ -3,5 +3,16 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h1>My Everyday Carry — <strong>Never Leave Home Without It</strong></h1>
+
+<div class="container">
+	<p class="intro">Three things I always bring with me. Click any card to read more.</p>
+
+	<section class="grid">
+		{% raw %}{% itemCard "Keys" "/images/keys.svg" "My car and apartment keys." "I can't get in my car without my keys." "/keys/" %}{% endraw %}
+		{% raw %}{% itemCard "ZipFizz" "/images/zipfizz.svg" "A daily energy drink mix." "I've had one every day since 7th grade — it keeps me focused and awake." "/zipfizz/" %}{% endraw %}
+		{% raw %}{% itemCard "Phone" "/images/phone.svg" "My iPhone for maps and more." "I'm terrible with directions — Google Maps saves me." "/phone/" %}{% endraw %}
+	</section>
+</div>
+
+<footer class="site-footer">Designed with a retro Miami Vice palette. Built with 11ty.</footer>
